@@ -7,6 +7,6 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-This is a stub for my web page. 
+This is a stub for my web page. It can be a starting point for your own!
 
-![](images/thumbnail.png)
+![](images/thumbnail.png) 
