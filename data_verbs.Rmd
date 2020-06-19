@@ -1,0 +1,82 @@
+---
+title: "Six Data Verbs"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+```
+
+## Three kinds of wrangling functions
+
+* Data verbs: data frame => data frame
+* Summary ("reduction") verbs: variable(s) => value
+* Transformation verbs:  variables(s) => variable
+
+## Six fundamental verbs
+
+* filter
+* select
+* arrange
+* mutate
+* group_by
+* summarize
+
+Others:
+
+* join family
+* spread
+* gather
+
+## NSSE Example
+
+```{r}
+NSSE <- read_excel("NSSE17 Data (Grinnell).xlsx")
+names(NSSE) 
+```
+
+
+## `summarise()`
+
+```{r}
+NSSE %>% summarise(total = sum(HOevaluate, na.rm = TRUE), funny = max(HOevaluate, na.rm = TRUE))
+```
+
+
+
+## `group_by()`
+
+```{r}
+NSSE %>% 
+  group_by(askquest) %>% 
+  mutate(Trudeau = HOevaluate - mean(HOevaluate, na.rm = TRUE)) %>%
+  select(askquest, total)
+```
+
+## Grades
+
+```{r}
+Grades <- read.csv("http://tiny.cc/mosaic/grades.csv")
+Courses <- read.csv("http://tiny.cc/mosaic/Courses.csv")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

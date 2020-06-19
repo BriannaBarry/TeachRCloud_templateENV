@@ -10,3 +10,6 @@ knitr::opts_chunk$set(echo = TRUE)
 This is a stub for my web page. It can be a starting point for your own!
 
 ![](images/thumbnail.png) 
+
+
+- June 22: I'm at the Canyons

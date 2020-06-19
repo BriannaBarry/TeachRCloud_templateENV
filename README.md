@@ -9,6 +9,8 @@ Many R packages are pre-installed in this project. These include:
 - mosaicModel
 - learnr (which includes shiny, etc)
 - knitr
+- RCurl
+- rsconnect
 
 ## Copying StatPrep Annie's StartUsingR project
 

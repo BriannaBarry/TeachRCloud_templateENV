@@ -1,0 +1,27 @@
+---
+title: "At Highline College"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+## Computer infrastructure at Highline
+
+I am not very happy right now ...
+
+* Hard to hook up my machine
+* Washed out display
+
+### A picture
+
+
+
+### Now some R
+
+$\int_0^\infty \frac{1}{x}dx$
+
+```{r}
+library(ggformula)
+gf_point(mpg ~ hp, data = mtcars)
+```
+

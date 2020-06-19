@@ -1,0 +1,12 @@
+name: Randomization
+title: Randomization
+username:
+account: statprep-annie
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 406377
+bundleId: 1550897
+url: https://statprep-annie.shinyapps.io/Randomization/
+when: 1535039207.99005
+asMultiple: FALSE
+asStatic: FALSE

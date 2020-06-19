@@ -1,0 +1,43 @@
+---
+title: "Today at Canyons"
+author: "The Dining-Room Group"
+date: "6/22/2018"
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggformula)
+library(NHANES)
+```
+
+## This morning
+
+
+```{r cache=TRUE}
+gf_point(Height ~ Age, data = NHANES, color = ~ Gender)
+```
+
+
+<!-- this is a comment -->
+
+We started at 9am by telling people to go to the [workshop schedule](http://statprep.org/Workshop) and solved 
+
+$$\int_0^\infty \frac{1}{x} dx$$
+
+The things we did ...
+
+1. The first thing
+    * part A
+    * part B
+2. The second thing
+
+## Ronald Fisher
+
+He looks like this ...
+
+![Fisher](http://www-history.mcs.st-andrews.ac.uk/BigPictures/Fisher_2.jpeg)
+

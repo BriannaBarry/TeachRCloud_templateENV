@@ -1,0 +1,70 @@
+---
+title: "Tutorial"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+library(mosaic)
+library(ggformula)
+knitr::opts_chunk$set(echo = FALSE)
+mod_of_hp <- lm(hp ~ cyl +disp , data = mtcars)
+
+```
+
+
+## Simulation
+
+What are the outcomes of adding up n dice?
+
+
+This command throws three dice and reports the values. Change it to throw 10 dice.
+
+Make a model of hp
+```{r unique_name, exercise = TRUE}
+mod <- lm(hp ~ cyl +disp , data = mtcars)
+```
+
+```{r unique_name-hint}
+size = 10
+```
+
+```{r unique_name-hint2}
+replace = TRUE
+```
+
+```{r unique_name-solution}
+sample(1:6, size = 10, replace = TRUE)
+```
+
+A model of horsepower is contained in `mod_of_hp`. Use that to find the confidence interval on disp
+```{r second-block, exercise = TRUE}
+
+```
+
+
+
+### Quiz
+
+*You can include any number of single or multiple choice questions as a quiz. Use the `question` function to define a question and the `quiz` function for grouping multiple questions together.*
+
+Some questions to verify that you understand the purposes of various base and recommended R packages:
+
+```{r quiz}
+quiz(
+  question("Which package contains functions for installing other R packages?",
+    answer("base"),
+    answer("tools"),
+    answer("utils", correct = TRUE),
+    answer("codetools")
+  ),
+  question("Which of the R packages listed below are used to create plots?",
+    answer("lattice", correct = TRUE),
+    answer("tools"),
+    answer("stats"),
+    answer("grid", correct = TRUE)
+  )
+)
+```
+
